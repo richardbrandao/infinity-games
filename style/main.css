@@ -13,7 +13,7 @@
 body {
     background: var(--preto);
     font-family: 'Arial', Times, serif;
-    color: white;
+    color: var(--branco);
 }
 
 header .container {
@@ -22,98 +22,158 @@ header .container {
     justify-content: space-between;
 }
 
+/*Menu Superior*/
+
 header .logo {
-    margin-left: 5px;
+    margin-left: 20px;
     font-family: 'Arial Black', times;
     font-size: 40px;
     color: var(--branco);
 }
 
-.botao-menu {
-    margin-left: 13px;
-    border-color: transparent;
-    border-radius: 20%;
+header .botao-menu {
+    margin-left: 3px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 10%;
     background-color: var(--branco);
-
     cursor: pointer;
     transition: 0.3s ease all;
 }
 
-.botao-menu i {
-    padding: 5px;
-    font-size: 20px;
-    width: 33px;
+header .botao-menu i {
+    padding: 4px 6px 6px 6px;
+    font-size: 25px;
+    width: 43px;
     height: 33px;
-    vertical-align: middle;
 }
 
 header nav .botao-menu:hover {
-    border-color: transparent;
     background-color: transparent;
     color: var(--branco);
 }
 
-/*Elementos Filme Principal*/
+/*Elementos Game Principal*/
 
-.filme-principal {
+main .game-principal {
     font-size: 16px;
-    background: linear-gradient(rgba(0,0,0,.60), rgba(0,0,0,.60)100%), url('/img/odyssei.jpg');
+    background: linear-gradient(rgba(0,0,0,.70), rgba(0,0,0,.70)100%), url('/img/odyssei.jpg');
     height: 500px;
     background-size: cover;
     background-position: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;    
+    align-items: flex-start; 
+    margin-bottom: 8px;   
 }
 
-.filme-principal .descricao {
-    margin-top: 20px;
-    margin-bottom: 35px;
-}
-
-.filme-principal .titulo {
-    margin-top: 15%;
+main .game-principal .titulo {
+    margin-top: 10%;
     font-size: 50px;
     font-family: 'Trebuchet MS';
 }
 
-.botao {
-    width: 200px;
+main .game-principal .descricao {
+    margin-top: 10px;
+    font-family: 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+main .mini-botao {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    padding: 5px 10px;
+    background-color: transparent;
+    border: none;
+    color: var(--branco);
+    font-size: 15px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+main .mini-botao:hover {
+    background-color: var(--branco);
+    color: var(--preto);
+    transition: 0.3s ease all;
+}
+
+main .botao {
     background-color: rgba(0,0,0,.50);
     border: none;
     border-radius: 20px;
-    color: white;
-    padding: 15px 30px;
+    color: var(--branco);
+    padding: 15px 25px;
     margin-right: 15px;
-
+    text-decoration: none;
     cursor: pointer;
     transition: 0.3s ease all;
 }
 
-.botao:hover {
-    background-color: white;
-    color: black;
+main .botao:hover {
+    background-color: var(--branco);
+    color: var(--preto);
 }
 
-.botao i {
+main .botao i {
     margin-right: 8px;
 }
 
-.container {
+main .container {
     margin-left: 20px;
 }
 
-.filme-principal .container {
-    width: 70%;
+main .game-principal .container {
+    width: 80%;
 }
 
-.box-filme {
+/*Carrosel de Games*/
+
+.categorias {
+    margin-left: 20px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 30px;
+    color: var(--branco);
+}
+
+.box-games {
     height: 100%;
     width: 100%;
     display: block;
 }
 
-.carrosel-filmes {
+.carrosel-games {
     margin-top: 10px;
+}
+
+/*Rodapé*/
+
+.rodape {
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background-color: #1d1d1d;
+
+}
+
+.botoes-rodape {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    margin-right: 10px;
+    font-size: 35px;
+    background-color: transparent;
+    border: none;
+}
+
+.botoes-rodape a {
+    text-decoration: none;
+}
+
+.botoes-rodape i {
+    color: var(--branco);
+}
+
+.botoes-rodape i:hover {
+    transition: 0.3s ease all;
+    color: white;
 }
